@@ -7,6 +7,7 @@ A web application for secure document analysis using Azure OpenAI.
 - Ask security-related questions about the uploaded document
 - Built-in security questions for quick checks
 - Modern, responsive UI
+![image](https://github.com/user-attachments/assets/babb092a-57da-4a8d-809b-894ba21d181a)
 
 ## Supported File Types
 - PDF: `.pdf`
