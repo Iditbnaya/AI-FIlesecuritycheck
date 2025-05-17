@@ -1,0 +1,11 @@
+flask
+flask-cors
+python-dotenv
+openai
+pypdf
+python-docx
+beautifulsoup4
+openpyxl
+pptx
+azure-ai-openai
+azure-identity

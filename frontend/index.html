@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Security Check</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-shield-alt"></i> AI Document Security Check</h1>
+            <p>Upload a document and let AI analyze its security risks.</p>
+        </header>
+
+        <section class="upload-section">
+            <h2>📂 Upload a File</h2>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Upload</button>
+            <p id="uploadMessage"></p>
+        </section>
+
+        <section class="ask-section">
+            <h2>🔍 Security Questions</h2>
+            <input type="text" id="questionInput" placeholder="Type your security question here...">
+            <button onclick="askQuestion()">Ask</button>
+            <button onclick="askRandomQuestion()">🎲 Random Security Check</button>
+        </section>
+
+        <section class="built-in-questions">
+            <h3>🛡️ Built-in Security Questions</h3>
+            <button onclick="askPresetQuestion('Does this document contain malware or spyware?')">🦠 Malware Check</button>
+            <button onclick="askPresetQuestion('Does this document contain any hidden or obfuscated code?')">🖥️ Hidden Code</button>
+            <button onclick="askPresetQuestion('Does this document contain any sensitive information or secrets?')">🔑 Secret Data</button>
+            <button onclick="askPresetQuestion('Was this document converted from another file type?')">🔄 File Conversion</button>
+            <button onclick="askPresetQuestion('Does this document contain any embedded scripts or macros?')">📜 Embedded Scripts</button>
+            <button onclick="askPresetQuestion('Are there any unusual patterns that suggest phishing attempts?')">🎭 Phishing Risk</button>
+        </section>
+
+        <section class="response-section">
+            <h2>🛡️ AI Security Analysis</h2>
+            <div id="response-box">
+                <p id="response">The AI's security report will appear here...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
